@@ -1,0 +1,69 @@
+const http = require('node:http');
+const hostname = '127.0.0.1';
+const port = 3000;
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end(`<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=950px, initial-scale=1.0">
+      <link rel="STYLESHEET" HREF = "style.css">
+      <title>Laksh chamber</title>
+  </head>
+  <body>
+      <div class ="navig">
+          <nav>
+          <img src = "images/lakshpng.png" alt ="LAkSH" height="100px" width="100px">
+          
+              <ul>
+                  <li><a href="sschamber.html">SS Chamber Cover</a></li>
+                  <li><a href ="frpchambercover">Frp Manhole Cover</a></li>
+                  <li><a href="Contact.html">Contact us</a></li>
+                  <li><a href = "#Gallery">Gallery</a></li>              
+              </ul>
+              <form action="#method">
+                  <input id = "ser" type="search" placeholder="www.sschambercover.in">
+                  <button id ="btn" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+             
+          </nav>
+      </div>
+  
+      <div class="Gallery-container">
+        <img src="images/Slide12.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide27.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide35.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide41.JPG" alt="Laksh Mahole cover"> 
+        <img src="images/Slide90.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide12.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide27.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide35.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide41.JPG" alt="Laksh Mahole cover"> 
+        <img src="images/Slide90.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide12.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide27.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide35.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide41.JPG" alt="Laksh Mahole cover"> 
+        <img src="images/Slide90.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide12.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide27.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide35.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide41.JPG" alt="Laksh Mahole cover"> 
+        <img src="images/Slide90.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide12.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide27.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide35.JPG" alt="Laksh Mahole cover">
+        <img src="images/Slide41.JPG" alt="Laksh Mahole cover"> 
+        <img src="images/Slide90.JPG" alt="Laksh Mahole cover">
+        
+      </div>
+      
+        
+  </body>
+  </html>`);
+});
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
